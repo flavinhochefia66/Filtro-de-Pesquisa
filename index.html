@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+
+<h1>Lista de Cores</h1>    
+    
+<input type="text" id="filtro" placeholder="Pesquisar...">
+
+<ul id="lista">
+<li>Amarelo</li>
+<li>Verde</li>   
+<li>Azul</li>
+<li>Preto</li> 
+<li>Vermelho</li>
+<li>Branco</li>
+<li>Cinza</li>
+<li>Rosa</li>
+<li>Roxo</li>
+<li>Laranja</li>
+<li>Marrom</li>
+
+
+</ul>
+
+</div>
+
+<style>
+
+body{
+
+font-family: arial;
+font-size: 12pt;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+input{
+
+background-color: rgb(211, 211, 211);
+border: 1px solid rgb(184, 184, 184);
+padding: 5px;
+border-radius: 5px;
+}
+
+input::placeholder{
+
+color:black;
+
+}
+
+input:focus{
+
+outline: none;
+border-color: rgb(65, 65, 65) ;
+
+}
+
+li{
+
+list-style-type: none;
+padding-top: 8px;
+
+}
+
+
+</style>
+
+<script src="script.js"></script>
+</body>
+</html>
