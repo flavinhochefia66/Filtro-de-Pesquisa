@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+
+<h1>Lista de Cores</h1>    
+    
+<input type="text" id="filtro" placeholder="Pesquisar...">
+
+<ul id="lista">
+<li>Amarelo</li>
+<li>Verde</li>   
+<li>Azul</li>
+<li>Preto</li> 
+<li>Vermelho</li>
+<li>Branco</li>
+<li>Cinza</li>
+<li>Rosa</li>
+<li>Roxo</li>
+<li>Laranja</li>
+<li>Marrom</li>
+
+
+</ul>
+
+<button onclick="trocar()">Trocar de Tema</button>
+
+</div>
+
+<style>
+
+:root{
+
+--cor-fundo: #ffffff;
+--cor-texto: #000000;
+--cor-borda-input: rgb(211, 211, 211);
+--cor-input-focus: #000000;
+
+}
+
+.dark-mode{
+
+--cor-fundo: #212121;
+--cor-texto: #ffffff;
+--cor-borda-input: rgb(255, 255, 255);
+--cor-input-focus: #ffffff;
+
+}
+
+
+body{
+
+font-family: arial;
+font-size: 12pt;
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-color: var(--cor-fundo);
+
+color: var(--cor-texto);
+
+transition: background-color 0.3s, color 0.3s;
+}
+
+input{
+
+border: none;
+border-bottom: 1px solid var(--cor-borda-input);
+padding: 5px;
+
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+}
+
+input::placeholder{
+
+color: var(--cor-texto);
+
+}
+
+input:focus{
+
+outline: none;
+border-color: var(--cor-input-focus) ;
+
+}
+
+li{
+
+
+padding-top: 8px;
+
+}
+
+
+</style>
+
+<script src="script.js"></script>
+</body>
+</html>
